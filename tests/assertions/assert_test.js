@@ -1,9 +1,13 @@
-import { assert } from "https://deno.land/std@0.224.0/testing/asserts.ts";
+import { assert } from "https://deno.land/std@0.224.0/testing/asserts.ts"; //Importando a função "assert" da biblioteca do DENO.
 
-let idade = 15; //Declaração da variável idade
+let idade = 15; //Declaração da variável idade.
 
-assert(idade >= 18, "Idade não pode ser menor que 18 anos!");
-// Essa assertion irá lançar um erro caso a condição seja falsa
-// A condição usada de exemplo foi: Se a idade for maior ou igual a 18, 
-// caso o retorno seja falso, irá retornar um erro!
+//Essa assertion tem a funcionalidade de garantir que o retorno do seu teste tenha um valor true.
 
+assert(idade < 18, "Idade maior que 18 anos!");
+//No exemplo a variável idade recebe o valor 15, fazendo com que essa assertion passe por 15 ser menor que 18.
+
+assert(idade >= 18, "Idade menor ou igual que 18 anos!");
+//No exemplo a variável idade recebe o valor 15, fazendo com que essa assertion falhe por 15 ser menor que 18.
+
+  
