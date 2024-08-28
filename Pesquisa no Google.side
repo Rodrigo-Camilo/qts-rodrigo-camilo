@@ -1,0 +1,60 @@
+{
+  "id": "ccc8bcd4-c60f-4346-b076-5a60fc4ab742",
+  "version": "2.0",
+  "name": "Pesquisa no Google",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "a9238ff8-43df-49fa-85fe-3a16c0680040",
+    "name": "Untitled",
+    "commands": [{
+      "id": "458c8358-6238-4369-a478-dedce6d34966",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53a5857f-3777-4eda-9ce4-a3fa19f4e2d1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a02eb09-88cf-4025-b67e-e118f90a80c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4513e1d6-aa44-4d31-b0af-ed36b113d9ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=#jZ2SBf > .ClJ9Yb > span",
+      "targets": [
+        ["css=#jZ2SBf > .ClJ9Yb > span", "css:finder"],
+        ["xpath=//div[@id='jZ2SBf']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Escola Técnica Estadual Professor Camargo Aranha · R. Marcial, 25 - Mooca, São Paulo - SP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1bca1437-73df-4470-911e-3d085b2e83a0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a9238ff8-43df-49fa-85fe-3a16c0680040"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
